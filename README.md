@@ -9,17 +9,6 @@
 - React Context | Redux/toolkit
 - NODE | v16.18.0
 
-## **IDE Setup**
-
-To maintain code quality and to have a standard among all team members the project has defined rules for Typescript.
-
-Integration of these rules with your favorite IDE is required.
-I recommend using Visual Studio Code with the following plugins:
-
-`| ESlint |` [check plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) |
-
-`| Prettier |` [check plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
-
 ## **Basic Scripts 📦**
 
 1. Install Packages
