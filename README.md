@@ -43,7 +43,7 @@ yarn svg-to-react | npm run svg-to-react
 
 PlopJS [check documentation](https://plopjs.com/documentation/)
 
-To ease the development process and try to maintain a standard of the code, this boilerplate uses PlopJS to build some files as an example to follow. All the templates are stored in `generators/templates`. Here are the available scripts for that:
+To ease the development process and try to maintain a standard of the code, this boilerplate uses PlopJS to build some files as an example to follow. All the templates are stored in `generators/templates`. Here are all the available scripts for that:
 
 1. To create a component (atom, molecule or organism) run:
 
