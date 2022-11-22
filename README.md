@@ -25,7 +25,7 @@ yarn dev | npm run dev
 
 3. Build Project
 
-Builds the project, and outputs to the folder ./dist
+Builds the project
 
 ```
 yarn build | npm run build
@@ -37,6 +37,14 @@ Command run along with `yarn dev` that converts vectors (SVGs) from the `public/
 
 ```
 yarn svg-to-react | npm run svg-to-react
+```
+
+5. Storybook
+
+Start storybook on http://localhost:6006/
+
+```
+yarn storybook | npm run storybook
 ```
 
 ## **Files Generator Scripts 📦**
@@ -70,10 +78,10 @@ This command will just create a structure of data management inside of `src/redu
 If u want to apply providers globally, don't forget to set it on `src/pages/_app.tsx` like that:
 
 React Context
-![react context](/public/docs/context-ss.png 'React Context')
+![react context](/public/docs/context-ss.png "React Context")
 
 React Redux
-![react redux](/public/docs/redux-ss.png 'Redux')
+![react redux](/public/docs/redux-ss.png "Redux")
 
 🚨🚨🚨
 OBS: all theses generators are not mandatory, they were created to help the developer follow the project standards but feel free to not use them and create your own structure. Just remember to remove unnecessary packages to enhance the performance of your project.
