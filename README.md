@@ -1,6 +1,7 @@
-<h1 align='center'>Boilerplate | React + TS + NextJS + Redux + SWR</h1>
+<h1 align='center'>React + TS + NextJS + Redux + SWR</h1>
 
 ## **Features**
+
 - NextJS
 - SWR | Axios
 - Storybook
