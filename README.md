@@ -8,7 +8,7 @@
 - Styled Components
 - PlopJS (file generator)
 - React Context | Redux/toolkit
-- NODE | v16.18.0
+- NODE | v18.12.0
 
 ## **Basic Scripts 📦**
 
