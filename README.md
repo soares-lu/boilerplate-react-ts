@@ -49,7 +49,8 @@ yarn storybook | npm run storybook
 
 ## **Files Generator Scripts 📦**
 
-PlopJS [check documentation](https://plopjs.com/documentation/)
+- PlopJS [(check docs)](https://plopjs.com/documentation/)
+- The Random User API is used in the generated examples [(check docs)](https://randomuser.me/documentation)
 
 To ease the development process and try to maintain a standard of the code, this boilerplate uses PlopJS to build some files as an example to follow. All the templates are stored in `generators/templates`. Here are all the available scripts for that:
 
