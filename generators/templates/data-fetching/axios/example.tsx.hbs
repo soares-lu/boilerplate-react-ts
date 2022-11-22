@@ -1,0 +1,52 @@
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { GetUsers } from "api/GetUsers";
+import type { IParamsOptions } from "api/utils";
+
+const REQUEST_PARAMS: IParamsOptions = {
+  nat: "br",
+  results: 10,
+  inc: ["picture", "name", "nat", "id"],
+};
+
+export const Example = () => {
+  const [users, setUsers] = useState<IUser[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string>("");
+
+  const getUsers = () => {
+    GetUsers(REQUEST_PARAMS)
+      .then((res) => setUsers(res.data.results))
+      .then(() => setIsLoading(false))
+      .catch((error) => {
+        setIsLoading(false);
+        setError(error);
+      });
+  };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  if (isLoading) return <>loading...</>;
+
+  if (error) return <>{error}</>;
+
+  return (
+    <div>
+      {users &&
+        users?.length &&
+        users.map((user) => (
+          <div key={user.id.value}>
+            <Image
+              src={user.picture.medium}
+              alt={user.name.first}
+              width={80}
+              height={80}
+            />
+            <p>{user.name.first}</p>
+          </div>
+        ))}
+    </div>
+  );
+};

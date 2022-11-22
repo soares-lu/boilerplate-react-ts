@@ -1,0 +1,16 @@
+import { useState, createContext } from 'react';
+import type { PropsWithChildren } from 'react';
+
+const UsersContext = createContext<UsersContextType>({
+  users: [],
+  setUsers: () => [],
+});
+
+export const UsersProvider = ({ children }: PropsWithChildren) => {
+  const [users, setUsers] = useState<IUser[]>([]);
+  const values = { users, setUsers };
+
+  return <UsersContext.Provider value={values}>{children}</UsersContext.Provider>;
+};
+
+export default UsersContext;

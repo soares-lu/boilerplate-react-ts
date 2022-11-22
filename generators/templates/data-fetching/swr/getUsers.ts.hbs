@@ -1,0 +1,22 @@
+import useSWR from 'swr';
+import { fetcher, BASE_URL } from '../config';
+import { convertToParams, IParamsOptions } from '../utils';
+
+type IUsersResponse = {
+  results: IUser[];
+};
+
+/**
+ * To understand the parameters from random user API
+ * @see https://randomuser.me/documentation#howto
+ */
+export const GetUsers = (options: IParamsOptions) => {
+  const params = convertToParams(options);
+  const { data, error } = useSWR<IUsersResponse>(`${BASE_URL}/api/${params}`, fetcher);
+
+  return {
+    users: data && data.results,
+    isLoading: !error && !data,
+    isError: error,
+  };
+};

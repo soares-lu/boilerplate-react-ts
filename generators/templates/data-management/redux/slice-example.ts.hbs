@@ -1,0 +1,22 @@
+import { createSlice } from '@reduxjs/toolkit';
+import type { PayloadAction } from '@reduxjs/toolkit';
+
+const INITIAL_STATE: IUser[] = [];
+
+/**
+ * To understand the official recommended approach of redux using the toolkit
+ * @see https://redux.js.org/introduction/getting-started#redux-toolkit-example
+ */
+export const usersSlice = createSlice({
+  name: 'users',
+  initialState: INITIAL_STATE,
+  reducers: {
+    setUsers: (state: IUser[], action: PayloadAction<IUser[]>) => {
+      return action.payload;
+    },
+  },
+});
+
+export const { setUsers } = usersSlice.actions;
+
+export default usersSlice.reducer;

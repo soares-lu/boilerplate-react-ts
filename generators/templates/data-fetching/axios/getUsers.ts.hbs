@@ -1,0 +1,11 @@
+import { axiosInstance } from '../config';
+import { convertToParams, IParamsOptions } from '../utils';
+
+/**
+ * To understand the parameters from random user API
+ * @see https://randomuser.me/documentation#howto
+ */
+export const GetUsers = async (options: IParamsOptions) => {
+  const params = convertToParams(options);
+  return await axiosInstance.get(`/api/${params}`);
+};
