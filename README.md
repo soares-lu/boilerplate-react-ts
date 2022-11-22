@@ -31,7 +31,7 @@ Builds the project, and outputs to the folder ./dist
 yarn build | npm run build
 ```
 
-5. Svg to React
+4. Svg to React Component
 
 Command run along with `yarn dev` that converts vectors (SVGs) from the `public/svg/` folder to React components in the `src/components/icons/` folder
 
