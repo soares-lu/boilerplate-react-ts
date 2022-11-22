@@ -67,7 +67,7 @@ yarn generate-component
 yarn generate-data-fetching
 ```
 
-This command will create an implementation example inside `src/example` and `src/api/GetUsers`. A config file inside `src/apis` also will be created based on the chosen option.
+This command will create an implementation example inside `src/example` and `src/api/GetUsers`. A config file inside `src/api` also will be created based on the chosen option.
 
 3. To create the structure of a data management (redux or react context) run:
 
