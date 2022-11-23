@@ -48,6 +48,21 @@ Start storybook on http://localhost:6006/
 yarn storybook | npm run storybook
 ```
 
+## **Components Folder Structure 🗂**
+
+We have 3 main folders for components:
+
+- `atoms`
+- `molecules`
+- `organisms`
+
+Each component folder has 4 main files:
+
+- `index.tsx`: This file contains all the logic for a component and returns a JSX (HTML in React). The component function needs to be named exactly as the folder name.
+- `styles.ts/tsx`: This file contains all styles for that specific component (styled-components) [(check docs)](https://styled-components.com/docs/basics#getting-started)
+- `stories.tsx`: This file helps you document components for reuse and automatically visually test your components to prevent bugs and also is for development-only, and it won't be included in your production bundle
+- `interfaces.ts`: This file contains all interfaces/types for that specific component (NOT REQUIRED)
+
 ## **Files Generator Scripts 📦**
 
 - PlopJS [(check docs)](https://plopjs.com/documentation/)
@@ -88,18 +103,3 @@ React Redux
 🚨🚨🚨
 OBS: all theses generators are not mandatory, they were created to help the developer follow the project standards but feel free to not use them and create your own structure. Just remember to remove unnecessary packages to enhance the performance of your project.
 🚨🚨🚨
-
-## **Components Folder Structure 🗂**
-
-We have 3 main folders for components:
-
-- `atoms`
-- `molecules`
-- `organisms`
-
-Each component folder has 4 main files:
-
-- `index.tsx`: This file contains all the logic for a component and returns a JSX (HTML in React). The component function needs to be named exactly as the folder name.
-- `styles.ts/tsx`: This file contains all styles for that specific component (styled-components) [(check docs)](https://styled-components.com/docs/basics#getting-started)
-- `stories.tsx`: This file helps you document components for reuse and automatically visually test your components to prevent bugs and also is for development-only, and it won't be included in your production bundle
-- `interfaces.ts`: This file contains all interfaces/types for that specific component (NOT REQUIRED)
