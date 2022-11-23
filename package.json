@@ -9,7 +9,7 @@
     "lint": "next lint",
     "svg-to-react": "svgr --icon --typescript --jsx-runtime 'automatic' -d src/components/icons public/svg",
     "generate-component": "yarn plop --plopfile generators/plop-component.js",
-    "generate-data-management": "yarn plop --plopfile generators/plop-data-management.js",
+    "generate-state-management": "yarn plop --plopfile generators/plop-state-management.js",
     "generate-data-fetching": "yarn plop --plopfile generators/plop-data-fetching.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

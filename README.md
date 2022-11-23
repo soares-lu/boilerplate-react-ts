@@ -69,10 +69,10 @@ yarn generate-data-fetching
 
 This command will create an implementation example inside `src/example` and `src/api/GetUsers`. A config file inside `src/api` also will be created based on the chosen option.
 
-3. To create the structure of a data management (redux or react context) run:
+3. To create the structure of a state management (redux or react context) run:
 
 ```
-yarn generate-data-management
+yarn generate-state-management
 ```
 
 This command will just create a structure of data management inside of `src/redux` or `src/contexts` (or both) based on the chosen option. Feel free to implement it any way you wanted (hooks, directly on the component directory, etc).

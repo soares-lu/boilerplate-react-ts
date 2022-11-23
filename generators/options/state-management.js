@@ -17,7 +17,7 @@ const actions = (data) => {
       {
         type: 'add',
         path: '../src/{{type}}/Users/index.tsx',
-        templateFile: 'templates/data-management/{{type}}/index.tsx.hbs',
+        templateFile: 'templates/state-management/{{type}}/index.tsx.hbs',
       },
     ];
   } else {
@@ -25,17 +25,17 @@ const actions = (data) => {
       {
         type: 'add',
         path: '../src/{{type}}/slices/users/index.tsx',
-        templateFile: 'templates/data-management/{{type}}/slice-example.ts.hbs',
+        templateFile: 'templates/state-management/{{type}}/slice-example.ts.hbs',
       },
       {
         type: 'add',
         path: '../src/{{type}}/slices/index.tsx',
-        templateFile: 'templates/data-management/{{type}}/index.ts.hbs',
+        templateFile: 'templates/state-management/{{type}}/index.ts.hbs',
       },
       {
         type: 'add',
         path: '../src/{{type}}/store.tsx',
-        templateFile: 'templates/data-management/{{type}}/store.ts.hbs',
+        templateFile: 'templates/state-management/{{type}}/store.ts.hbs',
       },
     ];
   }
